@@ -1,0 +1,10 @@
+body{
+    background-color:blueviolet;
+}
+.banner{
+    height:200px;
+    width:200px;
+    background-image:url("./assets/images/coding.jpeg");
+    background-size:cover;
+    background-position:center;
+}
