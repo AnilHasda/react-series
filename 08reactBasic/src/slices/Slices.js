@@ -23,8 +23,7 @@ export let createSlices = createSlice({
             localStorage.setItem("item", JSON.stringify(state.todo));
         },
         updateTodo: (state, action) => {
-            let resp = state.todo.filter(ele => ele.id === action.payload.id? {...ele,item:action.payload.item}: ele);
-            alert(resp[0].item)
+          alert(action.payload.id)
         }
     }
 })
