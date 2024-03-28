@@ -9,12 +9,14 @@ function App() {
   let dispatch = useDispatch();
   const addItems = (e) => {
     e.preventDefault();
+    if(btnName==="add item"){
     dispatch(addTodo({ item: input }));
+    setInput(" ");
+  }
     if(btnName==="update item"){
       
       setBtnName("add item")
     }
-    setInput(" ")
   }
   const update=(id)=>{
 let resp=data.filter((ele)=>ele.id===id);
