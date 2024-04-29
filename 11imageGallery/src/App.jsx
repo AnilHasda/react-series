@@ -25,13 +25,13 @@ function App() {
       setImage(filterImage);
     }
   }
-  useEffect(searchImage, [input])
+  useEffect(searchImage, [input]);
   return (
     <>
       <h2 style={{ textAlign: "center", marginBottom: "0px" }}>this is image gallery project</h2>
       <div style={{ backgroundColor: "", display: "flex", justifyContent: "center", alignItems: "center", marginTop: "50px", marginBottom: "50px" }}><input type="text" placeholder="search images" style={{ height: "40px", width: "50%", paddingLeft: "20px", outline: "none" }} onChange={e => setInput(e.target.value)} /></div>
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "50px" }}>
-        {image.length > 0 ? image.map((ele, index) => {
+        {image.length>0? image.map((ele, index) => {
           return <>
             <div key={index} style={{}}><img src={ele.urls.regular} alt="image" width="100%" style={{ objectFit: "cover", width: "300px", height: "300px" }} />
               <br />

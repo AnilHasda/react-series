@@ -1,0 +1,13 @@
+
+nav{
+    height:40px;
+    width:100%;
+    color:#fff;
+    background-color:#2c2c58;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 50px;
+    filter:contrast(64%);
+}
